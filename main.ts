@@ -10,6 +10,8 @@
 import { copyFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 
+// The grader runs this with /bot as the repo and /output as the target;
+// locally, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand in for them.
 const repoDir = process.env.MAKEFUN_BOT_DIR ?? '/bot';
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
